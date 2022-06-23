@@ -2128,6 +2128,8 @@ static int DoHandleAlienShotMove()
     if (y < 30 || y >= 39)
         return 1;
 
+
+    // unset god mode here
     if (!is_godmode())
         m.playerAlive = 0;
 
